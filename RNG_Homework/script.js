@@ -33,7 +33,19 @@ function makeid(length) {
 
  /////////////////////////////
 
-var leng = 7
+
+
+ var leng = 7
+
+ var uppercase = "yes"
+
+ var lowercase = "yes"
+
+ var numbers = "yes"
+
+ var specialcharacters = "yes"
+
+//length choose - multiplyer
 
  function rndmlt(multipr) {
    
@@ -48,3 +60,41 @@ var leng = 7
 
  console.log(mtpr);
 
+//
+
+//character choices
+
+var charchoose = function charchoose() {
+      var uprcs = ""
+   if (uppercase === "yes") {
+      uprcs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   }
+
+   var lorcs = ""
+   if (lowercase === "yes") {
+      lorcs = "abcdefghijklomopqrstuvwxyz";
+   }
+
+   var nmb = ""
+   if (numbers === "yes") {
+      nmb = "abcdefghijklomopqrstuvwxyz";
+   }
+
+   var spc = ""
+   if (specialcharacters === "yes") {
+      spc = "!@#$%^&*()?><;;:'~`";
+   }
+
+   return uprcs + lorcs + nmb + spc;
+}
+
+charchoose();
+
+var char = charchoose();
+
+//
+
+console.log("uppercase test", char);
+
+
+console.log("lil test",Math.floor(Math.random() * rndmlt(1)));
