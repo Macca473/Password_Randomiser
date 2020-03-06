@@ -79,16 +79,17 @@ var lengfn = function lengfn() {
 
    console.log("leng", leng)
 
-
 //character choices
 
-var uppercase = "yes"
+alert("answer yes or no to the following questions")
 
- var lowercase = "yes"
+ var uppercase = prompt("do you want uppercase letters?");
 
- var numbers = "yes"
+ var lowercase = prompt("do you want lowercase letters?")
 
- var specialcharacters = "yes"
+ var numbers = prompt("do you want numbers?")
+
+ var specialcharacters = ("do you want special characters?")
 
 var charchoose = function charchoose() {
       var uprcs = ""
@@ -96,17 +97,17 @@ var charchoose = function charchoose() {
       uprcs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    }
 
-   var lorcs = ""
+      var lorcs = ""
    if (lowercase === "yes") {
       lorcs = "abcdefghijklomopqrstuvwxyz";
    }
 
-   var nmb = ""
+      var nmb = ""
    if (numbers === "yes") {
       nmb = "abcdefghijklomopqrstuvwxyz";
    }
 
-   var spc = ""
+      var spc = ""
    if (specialcharacters === "yes") {
       spc = "!@#$%^&*()?><;;:'~`";
    }
