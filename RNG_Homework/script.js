@@ -140,3 +140,19 @@ var randpsw = function randpsw() {
 }
 
 console.log("final?", randpsw());
+
+//
+
+//html stuff 
+
+
+var password = document.querySelector("#password");
+
+var generate = document.querySelector("#generate");
+
+generate.addEventListener("click", function(event) {
+   event.preventDefault();
+
+   password.textContent = randpsw();
+})
+
