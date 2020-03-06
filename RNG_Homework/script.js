@@ -59,6 +59,16 @@ function makeid(length) {
 
  //console.log(mtpr);
 
+
+//html stuff 
+
+var password = document.querySelector("#password");
+
+var generate = document.querySelector("#generate");
+
+generate.addEventListener("click", function(event) { //beginning of event listener
+
+
 //
 
 //length choose - unnessery restrictions 
@@ -77,7 +87,7 @@ var lengfn = function lengfn() {
 
    var leng = lengfn();
 
-   console.log("leng", leng)
+   console.log("leng", leng);
 
 //character choices
 
@@ -91,6 +101,8 @@ alert("answer yes or no to the following questions")
 
  var specialcharacters = ("do you want special characters?")
 
+
+ 
 var charchoose = function charchoose() {
       var uprcs = ""
    if (uppercase === "yes") {
@@ -119,6 +131,9 @@ charchoose();
 
 var char = charchoose();
 
+
+
+
 //
 
 //
@@ -141,18 +156,18 @@ var randpsw = function randpsw() {
 
 console.log("final?", randpsw());
 
+
+event.preventDefault();
+
+password.textContent = randpsw();
+
+}) // end of event listener
+
 //
 
-//html stuff 
+//generate.addEventListener("click", function(event) {
+   //event.preventDefault();
 
-
-var password = document.querySelector("#password");
-
-var generate = document.querySelector("#generate");
-
-generate.addEventListener("click", function(event) {
-   event.preventDefault();
-
-   password.textContent = randpsw();
-})
+   //password.textContent = randpsw();
+//})
 
