@@ -12,24 +12,39 @@ console.log("random2", rand2);
 
 var char = "abcdefg"
 
-var lengthinput = 7
-
-function lengthboi(lengmulti) {
-
-        var lengmulti = 0
-    for (var lni = lengthinput; lni > 0; lni--) {
-        lengmulti = lengthinput * 10;
-    }
-
-    return lengmulti;
-}
-
-var mulitylpr = lengthboi.lengmulti
-
-console.log("leng", mulitylpr);
 
 var rand3 = char.charAt(Math.floor(Math.random()   ));
 
 console.log("random3", rand3)
 
+//////////////////////////////
+
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+ 
+ console.log("wat", makeid(5));
+
+ /////////////////////////////
+
+var leng = 7
+
+ function rndmlt(multipr) {
+   
+
+    for ( var n = 0; n < leng; n++) {
+         multipr = multipr * 10;
+    }
+    return multipr;
+ }
+
+ var mtpr = rndmlt(1);
+
+ console.log(mtpr);
 
