@@ -94,7 +94,10 @@ var char = charchoose();
 
 //
 
+// everything thrown together
+
 console.log("uppercase test", char);
 
-
 console.log("lil test",Math.floor(Math.random() * rndmlt(1)));
+
+
